@@ -19,10 +19,10 @@ export class StudentDetailComponent implements OnInit {
     })
     
   }
-  
+  /*
   delete(id:any, i:any) {
     console.log(id)
     if (window.)
   }
-
+  */
 }
