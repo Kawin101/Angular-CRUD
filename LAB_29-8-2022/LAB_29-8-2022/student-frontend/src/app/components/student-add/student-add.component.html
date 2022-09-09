@@ -1,0 +1,29 @@
+<div class="container mt-3">
+  <h1>Add data</h1>
+  <form [formGroup]="studentForm" (ngSubmit)="onSubmit()" class="example-form">
+    <mat-form-field class="example-full-width" appearance="fill">
+      <mat-label>Student-ID</mat-label>
+      <input
+        matInput
+        formControlName="studentid"
+        placeholder="000000000-0"
+        maxlength="11"
+        type="text"
+      />
+    </mat-form-field>
+    <mat-form-field class="example-full-width" appearance="fill">
+      <mat-label>Name</mat-label>
+      <input
+        matInput
+        formControlName="name"
+        placeholder="Mickey Mouse"
+        type="text"
+      />
+    </mat-form-field>
+    <mat-form-field class="example-full-width" appearance="fill">
+      <mat-label>Major</mat-label>
+      <input matInput formControlName="major" placeholder="CIS" type="text" />
+    </mat-form-field>
+    <button mat-raised-button type="submit" color="accent">Save</button>
+  </form>
+</div>
